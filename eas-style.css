@@ -1,0 +1,20 @@
+:root {
+    --input: 0;
+}
+
+.grid-container {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(var(--input), 1fr);
+    grid-template-rows: repeat(var(--input), 1fr);
+    /*Macbook viewport height is 686px*/
+    width: 650px;
+    height: 650px;
+    border: 0.5px solid rgb(220,220,220);
+  }
+
+  .grid-item {
+    border: 0.5px solid rgb(220,220,220);
+    /*font-size: 8px; -> Can be used to check that the correct number of cells has been generated*/
+    text-align: center;
+  }
